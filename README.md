@@ -1,8 +1,10 @@
-# linktree landing page clone
+# Linktree Landing Page Clone
 
-### This clone uses uses Material UI as the front-end UI framework on top of  react.js.
+### This clone uses Material UI as the front-end UI framework on top of react.js
 
-### <img src="react.png" alt="react" style="zoom:50%;" /><img src="mui.png" alt="mui" style="zoom:50%;" />
+### <img src="react.png" alt="react" style="zoom:50%;" />
+
+### <img src="mui.png" alt="mui" style="zoom:50%;" />
 
 ### Get Started
 
@@ -10,5 +12,5 @@
 
 ```bash
 npm install --save
-npm run dev
+npm run start
 ```
