@@ -1,18 +1,9 @@
 /* Common Imports */
-
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import PropTypes from "prop-types";
 
 /* Component Imports */
-
-import {
-  AppBar,
-  Toolbar,
-  Link,
-  useScrollTrigger,
-  Button,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Link, Button } from "@material-ui/core";
 import NavButton from "./navbar-components/NavButton";
 import SideNav from "./navbar-components/SideNav";
 
@@ -22,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#FFFFFF",
     height: "4.625rem",
     padding: "0rem 1rem 0rem 1rem",
+    [theme.breakpoints.down("xs")]: {
+      padding: "0rem 0rem 0rem 0rem",
+    },
   },
   toolBar: {
     width: "100%",
@@ -50,18 +44,25 @@ const useStyles = makeStyles((theme) => ({
       background: "#28bf7b",
     },
     [theme.breakpoints.down("xs")]: {
-      display: "none",
+      fontSize: "0.6rem",
+      fontWeight: 700,
+      padding: "0rem 0.5rem",
     },
   },
   menuButton: {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "flex-start",
+    justifyContent: "flex-end",
     alignItems: "center",
-    color: "#808080",
     padding: "0rem 0rem 0rem 0rem",
-    width: "1.5rem",
-    height: "1.5rem",
+    height: 24,
+    width: 24,
+    "& .MuiButton-label": {
+      width: "0px",
+    },
+    "& .MuiButton-root": {
+      minWidth: "0px",
+    },
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
@@ -71,18 +72,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    [theme.breakpoints.down("xs")]: {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
-      marginRight: "-4rem",
-    },
-  },
-  logoImg: {
-    height: "1.25rem",
-    width: "5.313rem",
   },
 }));
 
@@ -117,19 +106,19 @@ const Navbar = (props) => {
                 alt="Image could not load"
                 longdesc="Linktree Clone"
                 referrerPolicy="no-referrer"
-                width={100}
-                height={28}
+                width={85}
+                height={20}
                 style={{ marginRight: "2rem" }}
                 src="/images/logo/logo.svg"
               />
             </Link>
-            <NavButton href="/" text="Blog" icon="navbar/home/active" />
-            <NavButton href="/" text="Pricing" icon="navbar/home/active" />
-            <NavButton href="/" text="Help" icon="navbar/home/active" />
+            <NavButton href="/" text="Blog" />
+            <NavButton href="/" text="Pricing" />
+            <NavButton href="/" text="Help" />
           </div>
           {/* Page Links */}
           <div>
-            <NavButton href="/" text="Log in"/>
+            <NavButton href="/" text="Log in" />
             <Button className={classes.signupBtn}>SIGN UP FOR FREE</Button>
           </div>
 

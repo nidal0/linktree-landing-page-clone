@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: "#FFFFFF",
     [theme.breakpoints.up("lg")]: {
-      padding: "1rem 8rem",
+      padding: "4rem 6rem",
     },
   },
 }));

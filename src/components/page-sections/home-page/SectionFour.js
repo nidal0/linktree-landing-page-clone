@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
-    margin: "1rem 0rem 1rem 0rem",
+    padding: "4rem 0rem 4rem 0rem",
   },
   text: {
     display: "flex",

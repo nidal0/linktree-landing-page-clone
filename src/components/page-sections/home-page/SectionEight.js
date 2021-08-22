@@ -3,9 +3,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 /* Component Imports */
-import { Typography, Button, Hidden } from "@material-ui/core";
+import { Typography, Button, Hidden, Divider } from "@material-ui/core";
 import FeaturesCard from "./sub-components/FeaturesCard";
-import { LineWeight } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   sectionContainer: {
@@ -14,11 +13,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    margin: "1rem 0rem 1rem 0rem",
-    [theme.breakpoints.down("xs")]: {
-      flexDirection: "column",
-      justifyContent: "center",
-    },
+    padding: "4rem 0rem 4rem 0rem",
   },
   cardsRow: {
     display: "flex",
@@ -102,6 +97,7 @@ const SectionEight = () => {
           SEE ALL FEATURES
         </Button>
       </div>
+      <Divider style={{ marginTop: "4rem" }} />
     </React.Fragment>
   );
 };

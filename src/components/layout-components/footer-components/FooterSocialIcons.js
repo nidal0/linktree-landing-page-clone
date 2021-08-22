@@ -17,33 +17,16 @@ const FooterSocialIcons = () => {
     <React.Fragment>
       <div>
         <Link
-          href="https://facebook.com/"
+          href="https://linktr.ee/"
           rel="noopener"
-          title="Follow Linktree on Facebook"
+          title="Follow Linktree on Linktree"
           target="_blank"
         >
           <img
-            src="/images/icons/social/facebook.svg"
+            src="/images/icons/social/linktree_social.svg"
             alt="Image could not load"
-            width={32}
-            height={32}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            longdesc="Linktree"
-            className={classes.socialLinkIcon}
-          />
-        </Link>
-        <Link
-          href="https://twitter.com/"
-          rel="noopener"
-          title="Follow Linktree on Twitter"
-          target="_blank"
-        >
-          <img
-            src="/images/icons/social/twitter.svg"
-            alt="Image could not load"
-            width={32}
-            height={32}
+            width={21}
+            height={21}
             loading="lazy"
             referrerPolicy="no-referrer"
             longdesc="Linktree Clone"
@@ -57,10 +40,10 @@ const FooterSocialIcons = () => {
           target="_blank"
         >
           <img
-            src="/images/icons/social/instagram.svg"
+            src="/images/icons/social/instagram_social.svg"
             alt="Image could not load"
-            width={32}
-            height={32}
+            width={21}
+            height={21}
             loading="lazy"
             referrerPolicy="no-referrer"
             longdesc="Linktree Clone"
@@ -68,16 +51,33 @@ const FooterSocialIcons = () => {
           />
         </Link>
         <Link
-          href="https://pinterest.com/"
+          href="https://facebook.com/"
           rel="noopener"
-          title="Follow Linktree on Pinterest"
+          title="Follow Linktree on Facebook"
           target="_blank"
         >
           <img
-            src="/images/icons/social/pinterest.svg"
+            src="/images/icons/social/facebook_social.svg"
             alt="Image could not load"
-            width={32}
-            height={32}
+            width={21}
+            height={21}
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            longdesc="Linktree"
+            className={classes.socialLinkIcon}
+          />
+        </Link>
+        <Link
+          href="https://twitter.com/"
+          rel="noopener"
+          title="Follow Linktree on Twitter"
+          target="_blank"
+        >
+          <img
+            src="/images/icons/social/twitter_social.svg"
+            alt="Image could not load"
+            width={21}
+            height={21}
             loading="lazy"
             referrerPolicy="no-referrer"
             longdesc="Linktree Clone"
@@ -91,10 +91,44 @@ const FooterSocialIcons = () => {
           target="_blank"
         >
           <img
-            src="/images/icons/social/linkedin.svg"
+            src="/images/icons/social/linkedin_social.svg"
             alt="Image could not load"
-            width={32}
-            height={32}
+            width={21}
+            height={21}
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            longdesc="Linktree Clone"
+            className={classes.socialLinkIcon}
+          />
+        </Link>
+        <Link
+          href="https://tiktok.com/"
+          rel="noopener"
+          title="Follow Linktree on TikTok"
+          target="_blank"
+        >
+          <img
+            src="/images/icons/social/tiktok_social.svg"
+            alt="Image could not load"
+            width={21}
+            height={21}
+            loading="lazy"
+            referrerPolicy="no-referrer"
+            longdesc="Linktree Clone"
+            className={classes.socialLinkIcon}
+          />
+        </Link>
+        <Link
+          href="https://youtube.com/"
+          rel="noopener"
+          title="Follow Linktree on Youtube"
+          target="_blank"
+        >
+          <img
+            src="/images/icons/social/youtube_social.svg"
+            alt="Image could not load"
+            width={21}
+            height={21}
             loading="lazy"
             referrerPolicy="no-referrer"
             longdesc="Linktree Clone"
